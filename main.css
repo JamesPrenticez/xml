@@ -1,0 +1,133 @@
+/* -------------------- Color Pallet -------------------- */
+:root {
+    --purple: #8b03fa;
+}
+
+/* -------------------- Globals -------------------- */
+body {
+    height:100%;
+    margin: 0px;
+    font-family: verdana;
+    color: white;
+    background-color: whitesmoke;
+    }
+    
+    ::selection {
+      color: white;
+      background: black;
+    }
+    
+    h1 {
+        font-family: 'Eagle Lake', cursive;    
+        font-size: 4em;
+        margin: 0px;
+    }
+    
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+        font-size: 1em;
+        margin: 0px;
+        color: white;
+    }
+    
+    p {
+    color: black;
+    }
+    
+    a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+    
+    /* -------------------- Logo -------------------- */
+    .title {
+      text-align: center;
+    } 
+    
+    /* -------------------- Nav Bar-------------------- */
+    .navbar {
+      width: 100%;
+      height: 57px;
+      margin: 0px;
+      position: static;
+      background-color: black;
+      top: 0;
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .navbar li {
+      float: right;
+    
+    }
+    
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .navbar li :hover{
+      color: var(--purple);
+      cursor: pointer;
+    }
+    
+    .navbar .active {
+      color: var(--purple);
+    }
+       
+    /* -------------------- Main Items -------------------- */
+    header {
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    background-color: black;
+    }
+    
+    .container{
+      height: 68.5vh;
+      width: 100vw;
+    }
+    
+    footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    padding:  50px 0px 0px 0px;
+    }
+    /* -------------------- Tile Cards -------------------- */
+    .card {
+    margin: 10px auto 10px auto;
+    width: 400px;
+    height: 1em;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: black;
+    }
+    
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    transition: 0.3s;
+    }
+    
+    @media screen and (max-width: 800px) {
+    .card {
+    width: 80%;
+    }
+    
+    }
