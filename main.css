@@ -96,6 +96,7 @@ body {
     .container{
       height: 68.5vh;
       width: 100vw;
+      color: darkgreen;
     }
     
     footer {
