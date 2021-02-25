@@ -18,8 +18,7 @@ $.ajax({
   cache: false,
   url: url,
   success: function(data) {
-    console.log(data.XDescription)
-    result = $.parseJSON(data.XDescription)
+    result = JSON.stringify(data, null, 1)
     document.getElementById('results').innerHTML = result;
   },
   error: function(error) {
